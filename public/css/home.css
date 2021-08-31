@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FEC8D8;
+}
+
+nav ul{
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    padding: 20px 30px;
+    list-style-type: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 20px 20px;
+}
+
+nav ul li:hover{
+    background-color: rgb(236, 147, 214);
+}
+
+.trix-container{
+    background-color: wheat;
+    margin: 50px auto;
+    width: 80%;
+}

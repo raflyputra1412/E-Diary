@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+nav ul{
+    display: flex;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    border: solid 1px rgb(238, 105, 172);
+}
+
+nav ul li{
+    padding: 20px 30px;
+    list-style-type: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 20px 20px;
+}
+
+nav ul li:hover{
+    background-color: rgb(236, 147, 214);
+}
+
+.trix-container{
+    margin: 50px auto;
+    width: 80%;
+    height: 300px;
+}
+
+.trix-container button{
+    width: 100px;
+    float: right;
+    height: 30px;
+    border: 0;
+    color: #fff;
+    background-color: rgb(238, 106, 198);
+    margin-top: 50px;
+}
+
+.trix-container button:hover{
+    cursor: pointer;
+    background-color:  rgb(170, 33, 129);
+}
+
+
+label{
+    display: block;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+    border: solid 1px rgb(238, 105, 172);
+    min-width: 300px;
+    min-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}

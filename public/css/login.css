@@ -24,14 +24,12 @@ body{
     display: block;
     font-size: 45px;
     margin-top: 80px;
+    margin-bottom: 80px;
     color: #000000;
+
 }
 
-.inputcontainer{
-    margin-top: 100px;
-}
-
-.inputcontainer input[type=text], input[type=password]{
+.inputcontainer input[type=email], input[type=password]{
     width: 250px;
     height: 30px;
     border: 1px solid ;
@@ -64,9 +62,11 @@ p{
 }
 
 p a{
-    color: #ffffff;
+    color: #ff24bd;
 }
 
-p a:hover{
-    color: rgba(20, 108, 209, 0.99);
+.validation-error{
+    display: inline-block;
+    color: rgb(255, 55, 55);
+    margin-bottom: 30px;
 }

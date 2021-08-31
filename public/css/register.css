@@ -1,43 +1,44 @@
 body{
-    background-color: white;
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     text-align: center;
     width: 100%;
 }
 
 .box{
-    background-color: #000000;
-    width: 400px;
-    height: auto;
+    background-color: white;
+    width: 500px;
+    height: 500px;
     position: absolute;
     left: 50%;
     top: 30%;
     transform: translate(-50%, -30%);
-    border: 0px;
-    border-radius: 20px;
+    border: 0px solid #000;
+    /* border-radius: 20px; */
 }
 
 
-.box span{
-    font-family: 'Mate SC', serif;
-    display: inline-block;
-    font-size: 45px;
-    margin-top: 80px;
-    color: #ffffff;
+.box h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    font-size: 40px;
+    margin-top: 50px;
+    color: #000000;
 }
 
 .inputcontainer{
     margin-top: 80px;
 }
 
-.inputcontainer input[type=text], input[type=password], input[type=email]{
+.inputcontainer input[type=text], input[type=email], input[type=password]{
     width: 250px;
     height: 30px;
-    border: 0px ;
-    border-radius: 14px;
+    border: 1px solid ;
     text-align: center;
     font-size: 20px;
     margin-bottom: 30px;
-    font-family: 'STIX Two Text', serif;
+    font-family: 'Mate SC', serif;
 }
 
 button{
@@ -47,6 +48,10 @@ button{
     border: 0;
     border-radius: 14px;
     font-family: 'Mate SC', serif;
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 button:hover{
@@ -55,28 +60,9 @@ button:hover{
 }
 
 p{
-    color: #ffffff;
+    color: #000000;
 }
 
 p a{
-    color: #ffffff;
-}
-
-p a:hover{
-    color: rgba(20, 108, 209, 0.99);
-}
-
-.error{
-    border: 1px solid;
-	margin: 20px auto 0 auto;
-	background-repeat: no-repeat;
-	background-position: 10px center;
-	max-width: 300px;
-    text-align: center;
-    background-color: rgba(214, 214, 214, 0.99);
-    display: block;
-}
-
-.error li{
-    color: rgba(0, 0, 0, 0.87);
+    color: #ff24bd;
 }

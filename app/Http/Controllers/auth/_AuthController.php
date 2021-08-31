@@ -48,6 +48,7 @@ class AuthController extends Controller
             Session::flash('error', 'Username or Password are not correct!');
             return redirect()->route('login');
         }
+        
     }
     
 

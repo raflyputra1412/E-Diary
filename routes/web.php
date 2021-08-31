@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DiaryController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +16,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [AuthController::class, 'viewlogin'])->middleware('guest')->name('viewlogin');
+Route::get('/login', [AuthController::class, 'viewlogin'])->middleware('guest')->name('viewlogin');
+Route::post('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/logout', [AuthController::class, 'logout']);
 
-Route::get('/', [AuthController::class, 'viewlogin'])->name('viewlogin');
-Route::post('login', [AuthController::class, 'proseslogin'])->name('proseslogin');
+Route::get('/register', [RegisterController::class, 'viewregister'])->middleware('guest')->name('viewregister');
+Route::post('/register', [RegisterController::class, 'register']);
 
-Route::get('register', [AuthController::class, 'viewregister'])->name('viewregister');
-Route::post('prosesregister', [AuthController::class, 'prosesregister'])->name('prosesregister');
+Route::get('/home', [HomeController::class, 'home'])->middleware('auth')->name('home');
+Route::resource('/diary', DiaryController::class);
